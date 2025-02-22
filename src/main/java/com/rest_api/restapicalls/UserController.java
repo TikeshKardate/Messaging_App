@@ -20,6 +20,4 @@ public class UserController {
         return "Hello "+ name +" " + "from BridgeLabz";
     }
 
-
-
 }
