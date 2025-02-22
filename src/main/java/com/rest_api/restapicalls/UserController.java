@@ -13,7 +13,7 @@ public class UserController {
         return "Hello from BridgeLabz";
     }
 
-    //Method to return hello from Request Param
+    //Method to return hello from Request Parameter
     @GetMapping("/hello/query")
     public String sayHello(@RequestParam String name){
         return "Hello "+ name +" " + "from BridgeLabz";
