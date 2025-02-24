@@ -33,6 +33,12 @@ public class UserController {
     @PostMapping("/getfullname")
     public String sayHello(@RequestBody DtoUser user) {
         return "Hello " + user.getFirstName() + " " + user.getLastName() + " from BridgeLabz";
+    }
 
+    // Method UC5 getting firstname as path variable and lastname as query parameter in Put method
+    // Use http://localhost:8080/hello/Tikesh?lastName=Kardate
+    @PutMapping("/hello/{firstName}")
+    public String sayHello(@PathVariable String firstName, @RequestParam String lastName) {
+        return "Hello " + firstName + " " + lastName + " from BridgeLabz!";
     }
 }
